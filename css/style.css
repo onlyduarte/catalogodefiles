@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: grey;
+}
+h1.title{
+    background-color: black;
+    color: beige;
+    padding: 10px;
+    text-align: center;
+}
+.pesquisar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+form{
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 20px;
+    background: rgb(223, 219, 219);
+    display: flex;
+}
+span{
+    font-size: 25px!important;
+}
+.pesquisar input{
+    font-size: 15px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    flex: 1;
+    background: none;
+}
+form button{
+    padding: 1px 1px;
+    background-color: transparent;
+    /* color: white; */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+div.lista{
+    padding: 5px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+div.item{
+    text-align: center;
+    padding: 10px;
+    width: 200px;
+    margin: 5px;
+    /* font-size: 15px; */
+}
+div.item:hover{
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+div.item img{
+    width: 100%;
+}
+.lista .item {
+    background-color: rgb(194, 190, 190); /* Define a cor de fundo com transparência */
+    border-radius: 10px; /* Arredonda as bordas do card */
+    padding: 20px; /* Espaçamento interno para o conteúdo do card */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao card */
+}
+
+.lista img {
+    max-width: 100%; /* Garante que a imagem se ajuste ao card */
+}
+
+.lista h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.lista h4 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+
+@media (max-width: 500px){
+    form{
+        width: 100%;
+    }
+    form input{
+        font-size: 20px;
+    }
+}
