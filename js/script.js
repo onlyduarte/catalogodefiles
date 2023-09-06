@@ -11,7 +11,7 @@ frmPesquisa.onsubmit = (ev) =>{
     }
     fetch(`https://www.omdbapi.com/?s=${pesquisa}&apikey=${apiKey}`)
     .then(result => result.json())
-    .then(jsgit remote add origin https://github.com/onlyduarte/catalogodefiles.giton => carregaLista(json));
+    .then(json => carregaLista(json));
 }
 const carregaLista = (json) =>{
     const lista = document.querySelector("div.lista");

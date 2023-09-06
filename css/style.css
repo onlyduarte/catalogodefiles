@@ -89,6 +89,16 @@ div.item img{
 
 
 @media (max-width: 500px){
+    .lista .item{ 
+        max-width: 30%;
+        min-height: 30%;
+    }
+    .lista h3{
+        font-size: 16px;
+    }
+    .lista h4{
+        font-size: 16px;
+    }
     form{
         width: 100%;
     }
